@@ -131,6 +131,31 @@ document.addEventListener(`DOMContentLoaded`,function(){
       initSwiper2();
     })
 
+  
+    // -------------------------------------------------
+  var swiper = undefined;
+
+    function initSwiper3() {
+
+
+    const windowWidth = window.innerWidth;
+
+    if(windowWidth >= 960 && swiper == undefined){
+      // tabSwiper
+      swiper = new Swiper(".tabSwiper", {
+    });
+    } else {
+      swiper.destroy();
+      swiper = undefined;
+    }
+  }
+
+    initSwiper3();
+
+    window.addEventListener(`resize`, () => {
+      initSwiper3();
+    })
+  
 
   // tabSwiper
   new Swiper(".tabSwiper", {

@@ -1094,7 +1094,7 @@
   }
 
   .sec_5 .headtext {
-    font-size: 28px;
+    font-size: 18px;
     margin-bottom: 30px;
   }
 
@@ -1160,10 +1160,8 @@
   }
 
   .sec_4 .slide_wrap{
-    gap: 8px;
-  }
-
-  .sec_4 .slide_wrap{
+    width: 100%;
+    gap: 16px;
     flex-wrap: wrap;
   }
 
@@ -1172,11 +1170,7 @@
   }
 
   .sec_4 .slide{
-    width: calc((100% - 8px) / 2);
-  }
-
-  .sec_4 .slide_wrap{
-    width: 100%;
+    width: calc((100% - 16px) / 2);
   }
 
   .tabSwiper .bottom .item_name{
@@ -1230,11 +1224,11 @@
   }
 
   .slide_left .headtext {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .slide_left .subtext {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .more_btn {
@@ -1243,6 +1237,10 @@
     margin-top: 16px;
     font-size: 12px;
     cursor: pointer;
+  }
+
+  .banner{
+    margin-bottom: 36px;
   }
 
   .bannerSwiper .arrow_box{
@@ -1255,11 +1253,6 @@
 
   .company_inpo {
     display: none;
-    /* flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-    font-size: 12px;
-    gap: 10px; */
   }
 
   .f_bottom .cs_box {
@@ -1279,6 +1272,11 @@
   .tabSwiper .bottom .item_name {
     padding-bottom: 4px;
   }
+
+  .lookSwiper .item_info_box {
+    padding: 8px;
+  }
+
 }
 
 /* ------------------------------ */
@@ -1309,6 +1307,14 @@
     font-size: 24px;
   }
 
+  .slide_left .headtext {
+    font-size: 12px;
+  }
+
+  .slide_left .subtext {
+    font-size: 10px;
+  }
+
   .sec_4 .slide_wrap{
     flex-direction: column;
   }
@@ -1337,6 +1343,14 @@
     font-size: 16px;
   }
   
+  .sec_1 .container .arrow_box{
+    font-size: 10px;
+  }
+
+  .sec_1 .container .arrow_box .arrow_btn{
+    width: 20px;
+    height: 20px;
+  }
 
 }
 
@@ -1362,11 +1376,12 @@
   }
 
   .slide_left .headtext {
-    font-size: 14px;
+    font-size: 10px;
+    margin-bottom: 4px;
   }
 
   .slide_left .subtext {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .itemSwiper .swiper-slide .text_box .headtext{
@@ -1395,7 +1410,7 @@
   }
 
   .sec_5 .headtext{
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
 

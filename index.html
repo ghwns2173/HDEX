@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+
+    <title>HDEX</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header_area">
+            <div class="container">
+                <!-- logo -->
+                <a href="#none" class="logo">
+                    <svg viewBox="0 0 101 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 30V1H43L48.5 6.5V24.5L43 30H26Z" fill="black" />
+                        <path d="M32.5 23.5V8H38.5L41 10.5V21L38.5 23.5H32.5Z" fill="white" />
+                        <path d="M0.5 30V0.5H6.5V11.5H16.5V0.5H23.5V30H16.5V19.5H7.5V30H0.5Z" fill="black" />
+                        <path d="M74 1H51.5V30H74V23.5H59V18.5H71V12.5H59V7.5H74V1Z" fill="black" />
+                        <path d="M84 1H77L84.5 15.5L77 30H84L88.5 22.5L92.5 30H99.5L92 15.5L99.5 1H92.5L88 8.5L84 1Z" fill="black" />
+                        <path d="M26 30V1H43L48.5 6.5V24.5L43 30H26Z" stroke="black" />
+                        <path d="M32.5 23.5V8H38.5L41 10.5V21L38.5 23.5H32.5Z" stroke="black" />
+                        <path d="M0.5 30V0.5H6.5V11.5H16.5V0.5H23.5V30H16.5V19.5H7.5V30H0.5Z" stroke="black" />
+                        <path d="M74 1H51.5V30H74V23.5H59V18.5H71V12.5H59V7.5H74V1Z" stroke="black" />
+                        <path d="M84 1H77L84.5 15.5L77 30H84L88.5 22.5L92.5 30H99.5L92 15.5L99.5 1H92.5L88 8.5L84 1Z" stroke="black" />
+                    </svg>
+                </a>
+                <!-- main_menu -->
+                <ul class="main_menu">
+                    <li data-tab="tab1"><a href="#none" class="menu">NEW & FEATURED</a></li>
+                    <li data-tab="tab2"><a href="#none" class="menu">MEN</a></li>
+                    <li data-tab="tab3"><a href="#none" class="menu">WOMEN</a></li>
+                    <li data-tab="tab4"><a href="#none" class="menu">ACC</a></li>
+                    <li data-tab="tab5"><a href="#none" class="menu">COMMUNITY</a></li>
+                </ul>
+                <!-- icon_box -->
+                <div class="icon_box">
+                    <a href="#none" class="icon"><img src="./img/search-1_path.svg" alt="search"></a>
+                    <a href="#none" class="icon"><img src="./img/user_path.svg" alt="user"></a>
+                    <a href="#none" class="icon"><img src="./img/heart_path.svg" alt="heart"></a>
+                    <a href="#none" class="icon"><img src="./img/shopping-bag_path.svg" alt="shopping"></a>
+                </div>
+
+                <!-- 햄버거 버튼 -->
+                <a href="#none" class="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+
+        <!-- sub_menu -->
+        <div class="sub_menu_box">
+            <ul id="tab1" class="sub_menu new"></ul>
+            <ul id="tab2" class="sub_menu men">
+                <li class="menu_left">
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">PRODUCTS</a>
+                        <a href="#none" class="sub_menu_body">상품 전체보기</a>
+                        <a href="#none" class="sub_menu_body">아우터</a>
+                        <a href="#none" class="sub_menu_body">티셔츠 & 탑</a>
+                        <a href="#none" class="sub_menu_body">후드 & 스웨트셔츠</a>
+                        <a href="#none" class="sub_menu_body">슬리브리스</a>
+                        <a href="#none" class="sub_menu_body">팬츠</a>
+                        <a href="#none" class="sub_menu_body">쇼츠</a>
+                    </div>
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">FEATURED</a>
+                        <a href="#none" class="sub_menu_body">베스트 셀러</a>
+                        <a href="#none" class="sub_menu_body">머슬핏</a>
+                        <a href="#none" class="sub_menu_body">자이언트핏</a>
+                        <a href="#none" class="sub_menu_body">스페셜 사이즈 (~4XL)</a>
+                    </div>
+                </li>
+                <li class="menu_right">
+                    <a href="#none" class="sub_menu_detail photo">
+                        <img src="./img/sub_menu_men.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul id="tab3" class="sub_menu women">
+                <li class="menu_left">
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">PRODUCTS</a>
+                        <a href="#none" class="sub_menu_body">상품 전체보기</a>
+                        <a href="#none" class="sub_menu_body">아우터</a>
+                        <a href="#none" class="sub_menu_body">티셔츠 & 탑</a>
+                        <a href="#none" class="sub_menu_body">후드 & 스웨트셔츠</a>
+                        <a href="#none" class="sub_menu_body">스포츠 브라</a>
+                        <a href="#none" class="sub_menu_body">레깅스</a>
+                        <a href="#none" class="sub_menu_body">쇼츠</a>
+                    </div>
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">FEATURED</a>
+                        <a href="#none" class="sub_menu_body">베스트 셀러</a>
+                        <a href="#none" class="sub_menu_body">서포트 컬렉션</a>
+                    </div>
+                </li>
+                <li class="menu_right">
+                    <a href="#none" class="sub_menu_detail photo">
+                        <img src="./img/sub_menu_women.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul id="tab4" class="sub_menu acc">
+                <li class="menu_left">
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">PRODUCTS</a>
+                        <a href="#none" class="sub_menu_body">상품 전체보기</a>
+                        <a href="#none" class="sub_menu_body">가방</a>
+                        <a href="#none" class="sub_menu_body">양말 & 언더웨어</a>
+                        <a href="#none" class="sub_menu_body">모자</a>
+                        <a href="#none" class="sub_menu_body">악세사리</a>
+                    </div>
+                </li>
+                <li class="menu_right">
+                    <a href="#none" class="sub_menu_detail photo">
+                        <img src="./img/sec_04_acc_03.jpg" alt="">
+                    </a>
+                    <a href="#none" class="sub_menu_detail photo">
+                        <img src="./img/acc_bag_01.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul id="tab5" class="sub_menu community">
+                <li class="menu_left">
+                    <div class="sub_menu_detail">
+                        <a href="#none" class="sub_menu_head">공지사항</a>
+                        <a href="#none" class="sub_menu_body">브랜드 스토리</a>
+                        <a href="#none" class="sub_menu_body">핏 가이드</a>
+                        <a href="#none" class="sub_menu_body">아카이브</a>
+                        <a href="#none" class="sub_menu_body">리뷰</a>
+                        <a href="#none" class="sub_menu_body">HYM DOSAN</a>
+                        <a href="#none" class="sub_menu_body">오프라인 스토어</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- banner -->
+        <section class="banner">
+            <!-- Swiper -->
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/main_banner_01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/main_banner_02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/main_banner_03.jpg" alt=""></div>
+                </div>
+                <div class="arrow_box">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- section 1 -->
+        <section class="section sec_1">
+            <div class="container">
+                <div class="top">
+                    <h1 class="headtext">Best Selection</h1>
+                    <div class="arrow_box">
+                        <a href="#none">see all</a>
+                        <a href="#none" class="arrow_btn"><img src="./img/seeAll_btn.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottom">
+                <!-- Swiper -->
+                <div class="swiper itemSwiper">
+                    <div class="swiper-wrapper slide_wrap">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_01.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">브이넥 사틴 롱 슬리브 (Black)</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_02.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">코어 자이언트핏 스웨트셔츠 2 color</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_03.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">우먼스 레터링 피그먼트 크롭 후디 집업 (Pigment Pink)</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_04.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">자이언트핏 럭비 저지 롱 슬리브 (Navy)</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_05.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">컨트라스트 기모 스티치 후디 (Charcoal)</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="./img/sec_01_item_06.jpg" alt="">
+                        </div>
+                        <div class="text_box">
+                            <p class="headtext">메인로고 머슬핏 반팔티</p>
+                            <div class="price_box">
+                                <p class="discount">59,000원</p>
+                                <p class="price">50,100원</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section class="section sec_2">
+            <!-- <div class="container"> -->
+                <div class="sec2_bg">
+                    <div class="protextion_box">
+                        <div class="top_info">
+                            <p class="headtext">24FW</p>
+                            <p class="subtext">Cold protection</p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="imgbox left"></div>
+                            <div class="imgbox right"></div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- section 3 -->
+        <section class="section sec_3">
+            <div class="container">
+                <h2 class="look_name">LOOKBOOK</h2>
+                <div class="swiper lookSwiper">
+                    <div class="swiper-wrapper slide_wrap">
+                        <div class="swiper-slide">
+                            <!-- model_1 -->
+                            <div class="slide slide_left model_1">
+                                <div class="item_info_box">
+                                    <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업
+                                    (Melange Gray)</p>
+                                    <p class="subtext">그레이 컬러의 트랜디함을 매치해
+                                    꾸안꾸 분위기를 선사하는 하이넥 집업</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_right">
+                                <div class="out_box">
+                                    <div class="item_list_box">
+                                        <div class="item_image_box">
+                                            <img src="./img/sec_03_01.jpg" alt="">
+                                        </div>
+                                        <div class="item_info">
+                                            <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업</p>
+                                            <p class="price">89,300원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- model_2 -->
+                            <div class="slide slide_left model_2">
+                                <div class="item_info_box">
+                                    <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업
+                                    (Melange Gray)</p>
+                                    <p class="subtext">그레이 컬러의 트랜디함을 매치해
+                                    꾸안꾸 분위기를 선사하는 하이넥 집업</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_right">
+                                <div class="out_box">
+                                    <div class="item_list_box">
+                                        <div class="item_image_box">
+                                            <img src="./img/sec_03_03.jpg" alt="">
+                                        </div>
+                                        <div class="item_info">
+                                            <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업</p>
+                                            <p class="price">89,300원</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_list_box">
+                                        <div class="item_image_box">
+                                            <img src="./img/sec_03_04.jpg" alt="">
+                                        </div>
+                                        <div class="item_info">
+                                            <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업</p>
+                                            <p class="price">89,300원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- model_3 -->
+                            <div class="slide slide_left model_3">
+                                <div class="item_info_box">
+                                    <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업
+                                    (Melange Gray)</p>
+                                    <p class="subtext">그레이 컬러의 트랜디함을 매치해
+                                    꾸안꾸 분위기를 선사하는 하이넥 집업</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_right">
+                                <div class="out_box">
+                                    <div class="item_list_box">
+                                        <div class="item_image_box">
+                                            <img src="./img/sec_03_bag.jpg" alt="">
+                                        </div>
+                                        <div class="item_info">
+                                            <p class="headtext">[HDEX x BARBIE™] 컬러 블럭 하이넥 집업</p>
+                                            <p class="price">89,300원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <a href="#none" class="more_btn">view more +</a>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+        <section class="section sec_4">
+            <div class="container">
+                <p class="m_tab_head">for you</p>
+                <ul class="tab_list_box">
+                    <p class="tab_head">NEW ARRIVALS</p>
+                    <!-- <li><a href="#none" class="head">NEW ARRIVALS</a></li> -->
+                    <li data-alt="tab1-1" class="tabOn"><a href="#none" class="list">new & featured</a></li>
+                    <li data-alt="tab1-2"><a href="#none" class="list">women</a></li>
+                    <li data-alt="tab1-3"><a href="#none" class="list">men</a></li>
+                    <li data-alt="tab1-4"><a href="#none" class="list">acc</a></li>
+                </ul>
+                <!-- swiper -->
+                <!-- tab1-1_new & featured -->
+                <p class="tab_name">new & featured</p>
+                <div id="tab1-1" class="swiper tabSwiper swiper_wrap tabOn">
+                    <div class="swiper-wrapper slide_wrap">
+                    <div class="swiper-slide slide">
+                        <div class="top new_model1">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">우먼스 스테레오 립 나일론 자켓 (Black)</p>
+                            <p class="item_price">109,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top new_model2">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">스티치 워크 하이텐션 와이백 브라탑 (Black)</p>
+                            <p class="item_price">49,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top new_model3">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">우먼스 백 포켓 나일론 자켓 (White)</p>
+                            <p class="item_price">109,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top new_model4">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">스프레이 블렌드 후디 집업 (Black)</p>
+                            <p class="item_price">125,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top new_model5">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">페이디드 워싱 메인로고 와이드 스웨트 팬츠 (Pink)</p>
+                            <p class="item_price">98,000원</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- tab1-2_women -->
+                <p class="tab_name">women</p>
+                <div id="tab1-2" class="swiper tabSwiper swiper_wrap ">
+                    <div class="swiper-wrapper slide_wrap">
+                    <div class="swiper-slide slide">
+                        <div class="top women_model1">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">우먼스 엠보 자수 크롭 후디 집업 4 color</p>
+                            <p class="item_price">79,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top women_model2">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">우먼스 백 포켓 나일론 자켓 (Orange)</p>
+                            <p class="item_price">98,100원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top women_model3">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">스프레이 블렌드 후디 집업 (Pink)</p>
+                            <p class="item_price">125,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top women_model4">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">우먼스 서포트 웜업 부츠컷 레깅스 (Brown)</p>
+                            <p class="item_price">53,200원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top women_model5">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">몬드 릴렉스핏 크롭 티셔츠</p>
+                            <p class="item_price">25,600원</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- tab1-3_men -->
+                <p class="tab_name">men</p>
+                <div id="tab1-3" class="swiper tabSwiper swiper_wrap">
+                    <div class="swiper-wrapper slide_wrap">
+                    <div class="swiper-slide slide">
+                        <div class="top men_model1">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">더매스 212 자이언트핏 럭비 저지 롱슬리브 (Red)</p>
+                            <p class="item_price">94,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top men_model2">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">더매스 212 슬리브리스 (Khaki)</p>
+                            <p class="item_price">52,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top men_model3">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">더매스 212 피그먼트 후디 집업 (Pigment Charcoal)</p>
+                            <p class="item_price">139,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top men_model4">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">더매스 212 바시티 나일론 점퍼 (Black)</p>
+                            <p class="item_price">179,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top men_model5">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">더매스 212 피그먼트 스웨트 셔츠 (Pigment Charcoal)</p>
+                            <p class="item_price">105,000원</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- tab1-4_ACC -->
+                <p class="tab_name">acc</p>
+                <div id="tab1-4" class="swiper tabSwiper swiper_wrap">
+                    <div class="swiper-wrapper slide_wrap">
+                    <div class="swiper-slide slide">
+                        <div class="top acc_model1">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">워크아웃 글로시 더플백 (Black)</p>
+                            <p class="item_price">115,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top acc_model2">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">멀티 카고 토트백 (Black)</p>
+                            <p class="item_price">129,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top acc_model3">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">짐 코듀라 타이탄 더플백 (Black)</p>
+                            <p class="item_price">169,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top acc_model4">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">리프팅 프로 삭스 2 color</p>
+                            <p class="item_price">19,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="top acc_model5">
+                            <div class="top_bar">
+                                <div class="label_box">
+                                    <p>Black Label</p>
+                                </div>
+                                <div class="heart_box">
+                                    <img src="./img/heart_path.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="item_name">멀티 카고 토트백 (Light Gray)</p>
+                            <p class="item_price">129,000원</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section class="section sec_5">
+            <div class="container">
+                <h1 class="headtext">더알아보기</h1>
+                <div class="company_img_box">
+                    <a href="#none" class="in_box"><div class="box box1"></div></a>
+                    <a href="#none" class="in_box"><div class="box box2"></div></a>
+                    <a href="#none" class="in_box"><div class="box box3"></div></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="f_top">
+                    <a href="#none" class="footer_logo">
+                        <svg viewBox="0 0 101 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 30V1H43L48.5 6.5V24.5L43 30H26Z" fill="black" />
+                            <path d="M32.5 23.5V8H38.5L41 10.5V21L38.5 23.5H32.5Z" fill="white" />
+                            <path d="M0.5 30V0.5H6.5V11.5H16.5V0.5H23.5V30H16.5V19.5H7.5V30H0.5Z" fill="black" />
+                            <path d="M74 1H51.5V30H74V23.5H59V18.5H71V12.5H59V7.5H74V1Z" fill="black" />
+                            <path d="M84 1H77L84.5 15.5L77 30H84L88.5 22.5L92.5 30H99.5L92 15.5L99.5 1H92.5L88 8.5L84 1Z" fill="black" />
+                            <path d="M26 30V1H43L48.5 6.5V24.5L43 30H26Z" stroke="black" />
+                            <path d="M32.5 23.5V8H38.5L41 10.5V21L38.5 23.5H32.5Z" stroke="black" />
+                            <path d="M0.5 30V0.5H6.5V11.5H16.5V0.5H23.5V30H16.5V19.5H7.5V30H0.5Z" stroke="black" />
+                            <path d="M74 1H51.5V30H74V23.5H59V18.5H71V12.5H59V7.5H74V1Z" stroke="black" />
+                            <path d="M84 1H77L84.5 15.5L77 30H84L88.5 22.5L92.5 30H99.5L92 15.5L99.5 1H92.5L88 8.5L84 1Z" stroke="black" />
+                        </svg>
+                    </a>
+                    <ul class="company_inpo">
+                        <li><a href="#none" class="f_menu">Company Information</a></li>
+                        <li><a href="#none" class="f_menu">Terms of Use</a></li>
+                        <li><a href="#none" class="f_menu">Privacy Policy</a></li>
+                        <li><a href="#none" class="f_menu">Use Guides</a></li>
+                    </ul>
+                </div>
+                <div class="f_bottom">
+                    <div class="cs_box">
+                        <p>CS CENTER</p>
+                        <p>070-4335-1189</p>
+                    </div>
+                    <div class="time_box">
+                        <p>11:00 am ~ 4:00 pm</p>
+                        <p>(1:00 pm ~ 2:10 pm - Lunch)</p>
+                        <p>Sat.Sun.Holiday CLOSED</p>
+                        <p>입금계좌안내 KB 479001-01-288745 (주)디에프코퍼레이션</p>
+                    </div>
+                    <div class="business_box">
+                    <p class="business">KOREA BUSINESS (국내 비즈니스 문의): contact@hdex.co.kr</p>
+                    <p class="business">GLOBAL BUSINESS (해외 비즈니스 문의): global.contact@hdex.co.kr</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -982,7 +982,7 @@
 
   .sec_1 .container .top .headtext{
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .sec_1 .container .arrow_box{
@@ -1026,6 +1026,7 @@
   .itemSwiper .swiper-slide{
     margin-right: 0;
     width: calc((100% - 8px) / 2);
+    margin-bottom: 12px;
   }
 
   .sec_3 .look_name{
@@ -1045,7 +1046,7 @@
   }
 
   .lookSwiper .swiper-slide{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .lookSwiper .slide_right{

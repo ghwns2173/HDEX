@@ -876,20 +876,49 @@
 /* --------------------------------------------------------- */
 /* 1200 */
 @media (max-width: 1200px) {
+
+  @keyframes scroll {
+      0% {
+        transform: translateY(-100%);
+      }
+  
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
   .header_area .m_btn {
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     width: 20px;
     height: 15px;
     z-index: 99999;
+
+    position: relative;
+  }
+
+  .m_btn span{
+    position: absolute;
+    transition: 0.3s;
   }
 
   .header_area .m_btn span {
     width: 100%;
     height: 2px;
     background-color: #222;
+  }
+
+  .m_btn span:nth-child(1) {
+    top: 0;
+  }
+
+  .m_btn span:nth-child(2) {
+    top: 50%;
+  }
+
+  .m_btn span:nth-child(3) {
+    top: 100%;
   }
 
   .header_area .main_menu {
@@ -936,9 +965,26 @@
     transform: translateY(0);
   }
 
+  .m_btn.active span:nth-child(1){
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  .m_btn.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .m_btn.active span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
   .sub_menu_box{
     display: none;
   }
+
+  
+  
 }
 
 /* ------------------------------ */
@@ -1263,11 +1309,13 @@
 
   .f_bottom .cs_box {
     margin-top: 20px;
+    font-size: 14px;
   }
 
   .f_bottom .time_box {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 12px;
   }
 
   .footer_area .footer_logo svg{
@@ -1457,11 +1505,5 @@
   .f_bottom .time_box{
     font-size: 12px;
   }
-
-  .f_bottom .cs_box{
-    font-size: 16px;
-  }
-
-  
 
 }

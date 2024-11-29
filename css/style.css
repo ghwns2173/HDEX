@@ -876,16 +876,6 @@
 /* --------------------------------------------------------- */
 /* 1200 */
 @media (max-width: 1200px) {
-
-  @keyframes scroll {
-      0% {
-        transform: translateY(-100%);
-      }
-  
-      100% {
-        transform: translateY(0);
-      }
-    }
     
   .header_area .m_btn {
 
@@ -1313,8 +1303,8 @@
   }
 
   .f_bottom .time_box {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 12px;
   }
 

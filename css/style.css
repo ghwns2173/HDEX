@@ -1,10 +1,6 @@
-.wrap{
+html,body{
   overflow-x: hidden;
 }
-
-/* html,body{
-  overflow-x: hidden;
-} */
 
 .header_area .m_btn {
   display: none;
@@ -84,9 +80,9 @@
   height: auto;
   padding: 20px;
   animation: scroll 0.3s linear;
-} */
+}
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateY(-100%);
   }

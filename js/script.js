@@ -1,4 +1,30 @@
-document.addEventListener(`DOMContentLoaded`,function(){
+document.addEventListener(`DOMContentLoaded`, function () {
+  
+    // top버튼
+  // 1.변수선언하기
+  const topBtn = document.querySelector(`.top_btn`);
+
+  // 2. 스크롤 이벤트 걸기
+  window.addEventListener(`scroll`, function () {
+    // 3. 변수에다가 스크롤Y값 넣어주기
+    const scrollTop = window.scrollY;
+    
+
+    // 4. if문 사용하여 스크롤값이 300이상 부터 버튼이 보여지고 사라지는지 조건문 걸어주기
+    if (scrollTop >= 300) {
+      topBtn.classList.add(`scroll`);
+    } else {
+      topBtn.classList.remove(`scroll`);
+    }
+  });
+
+  // 5. 탑버튼 클릭 이벤트를 진행하여 클릭했을때 부드럽게 맨 위로 올라가게 하기
+  topBtn.addEventListener(`click`, function () {
+    window.scrollTo({
+      top: 0,
+      behavior: `smooth`
+    })
+  });
 
 // header scroll event
   window.addEventListener(`wheel`, function (event) {

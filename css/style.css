@@ -352,6 +352,10 @@ html,body{
   height: 500px;
 }
 
+.itemSwiper .slide_wrap .swiper-slide .img_box img{
+  object-position: top;
+}
+
 .itemSwiper .swiper-slide .text_box {
   padding-top: 16px;
 }
@@ -852,6 +856,32 @@ html,body{
 
 .business_box .business:last-child {
   margin-bottom: 0;
+}
+
+/* ------------------------------------ */
+/* top_btn */
+.top_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eee;
+  opacity: 0;
+  z-index: -1;
+
+  transition: 0.3s;
+}
+
+.top_btn a {
+  display: block;
+}
+
+.top_btn.scroll {
+  opacity: 1;
+  z-index: 9999;
 }
 
 /* --------------------------------------------------------- */
@@ -1498,6 +1528,13 @@ html,body{
 
   .f_bottom .time_box{
     font-size: 12px;
+  }
+
+  .top_btn{
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
   }
 
 }

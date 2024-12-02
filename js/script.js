@@ -27,17 +27,17 @@ document.addEventListener(`DOMContentLoaded`, function () {
   });
 
 // header scroll event
-  window.addEventListener(`wheel`, function (event) {
-    const headerScroll = document.querySelector(`.header_area`); 
+  // window.addEventListener(`wheel`, function (event) {
+  //   const headerScroll = document.querySelector(`.header_area`); 
     
-    if (event.deltaY > 0) {
-      // wheel down
-      headerScroll.classList.remove(`scroll`);
-    } else {
-      // wheel up
-      headerScroll.classList.add(`scroll`);
-    }
-  });
+  //   if (event.deltaY > 0) {
+  //     // wheel down
+  //     headerScroll.classList.remove(`scroll`);
+  //   } else {
+  //     // wheel up
+  //     headerScroll.classList.add(`scroll`);
+  //   }
+  // });
 
 
   // 햄버거버튼 및 메뉴

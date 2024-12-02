@@ -81,7 +81,7 @@ html,body{
 /* header sroll event */
 .header_area.scroll {
   position: fixed;
-  height: auto;
+  /* height: auto; */
   padding: 20px;
   animation: scroll 0.3s linear;
 }
@@ -905,6 +905,7 @@ html,body{
   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     padding-bottom: 0;
   }
+
 }
 
 /* --------------------------------------------------------- */
@@ -1253,6 +1254,12 @@ html,body{
     padding-bottom: 8px;
   }
 
+  html,
+  body {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
 }
 /* ------------------------------ */
 /* 760 */
@@ -1446,6 +1453,13 @@ html,body{
   .lookSwiper .item_info_box{
     width: 400px;
     padding: 12px;
+  }
+
+  .top_btn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
   }
 
 }

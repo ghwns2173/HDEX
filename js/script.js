@@ -57,7 +57,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
   });
 
 
-// 서브메뉴 탭 연결
   const menuList = document.querySelectorAll(`.main_menu li`);
   const subMenuBox = document.querySelector(`.sub_menu_box`);
 
@@ -65,7 +64,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
     menuBtn.addEventListener(`mouseenter`, function () {
       subMenuBox.classList.add(`active`);
       
-    // 탭연결하기
     const tabData = this.getAttribute(`data-tab`);
     const subMenu = document.querySelectorAll(`.sub_menu`);
 

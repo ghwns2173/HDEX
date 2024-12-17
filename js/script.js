@@ -108,7 +108,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
       // itemSwiper
       swiper = new Swiper(".itemSwiper", {
           slidesPerView: 4,
-          spaceBetween: 20,
           scrollbar: {
             el: ".swiper-scrollbar",
             hide: true,

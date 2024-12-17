@@ -183,8 +183,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
   // tabSwiper
   new Swiper(".tabSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
+    slidesPerView: 4
   });
 
   // sec_4 탭기능
